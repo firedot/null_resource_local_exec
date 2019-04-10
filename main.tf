@@ -1,5 +1,3 @@
-resource "null_resource" "potatoi" {
-  triggers = {
-    "apple" = "${timestamp()}"
-  }
+module  "potatoi" {
+  source = "./modules/"
 }
